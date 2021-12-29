@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>logback-plugin-a</module>
+        <module>logback-plugin-b</module>
+        <module>logback-app</module>
+    </modules>
+
+    <groupId>com.syoka.tutorial</groupId>
+    <artifactId>logback-config-tutorial</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>logback-tutorial</name>
+
+    <properties>
+        <java.version>11</java.version>
+        <reversion>0.0.1-SNAPSHOT</reversion>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.syoka.tutorial</groupId>
+                <artifactId>logback-app</artifactId>
+                <version>${reversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.syoka.tutorial</groupId>
+                <artifactId>logback-plugin-a</artifactId>
+                <version>${reversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.syoka.tutorial</groupId>
+                <artifactId>logback-plugin-b</artifactId>
+                <version>${reversion}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
