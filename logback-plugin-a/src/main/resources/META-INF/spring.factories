@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.syoka.tutorial.logback.plugin.a.autoconfigure.LogbackPluginAAutoConfiguration
+org.springframework.context.ApplicationContextInitializer=com.syoka.tutorial.logback.plugin.a.autoconfigure.initializer.PluginALogbackInitializer
